@@ -31,7 +31,7 @@ public class Sobre2 extends JFrame
    {
    	setResizable(false);
    	setAutoRequestFocus(false);
-   	getContentPane().setBackground(Color.BLACK);
+   	getContentPane().setBackground(SystemColor.activeCaption);
 	   
 	   pessoaBD4 = new PessoaBD4();
 	   pessoa4 = new Pessoa4();
@@ -53,21 +53,21 @@ public class Sobre2 extends JFrame
 	   setVisible(true);
 		getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("New label");
+		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(Sobre2.class.getResource("/Imagens/IMG_2.jpg")));
-		lblNewLabel.setBounds(131, 94, 506, 369);
+		lblNewLabel.setBounds(131, 36, 583, 446);
 		getContentPane().add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("OBRIGADO PELA ATEN\u00C7\u00C3O !!!");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		JLabel lblNewLabel_1 = new JLabel("Sistema desenvolvido pela EL3R");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblNewLabel_1.setForeground(Color.RED);
-		lblNewLabel_1.setBounds(185, 48, 467, 53);
+		lblNewLabel_1.setBounds(131, 11, 467, 53);
 		getContentPane().add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_1_1 = new JLabel("FELIZ NATAL ...");
+		JLabel lblNewLabel_1_1 = new JLabel("Contato: (12) 9999-4848 ");
 		lblNewLabel_1_1.setForeground(Color.RED);
-		lblNewLabel_1_1.setFont(new Font("Tahoma", Font.PLAIN, 30));
-		lblNewLabel_1_1.setBounds(257, 447, 238, 53);
+		lblNewLabel_1_1.setFont(new Font("Rockwell", Font.ITALIC, 24));
+		lblNewLabel_1_1.setBounds(141, 447, 305, 53);
 		getContentPane().add(lblNewLabel_1_1);
 	   
 	   

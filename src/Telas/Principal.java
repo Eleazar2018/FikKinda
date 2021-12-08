@@ -19,7 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import java.awt.Font;
 import java.awt.Color;
-
+import Telas.ManualPdf;
 import Telas.Sobre2;
 
 public class Principal extends JFrame {
@@ -50,6 +50,7 @@ public class Principal extends JFrame {
 	private AlterarS altS;
 	private Fik fik;
 	private Sobre2 sobre;
+	private Manual manual;
 	
 	public Principal() {
 		setFont(new Font("Helvetica", Font.PLAIN, 18));
@@ -75,7 +76,7 @@ public class Principal extends JFrame {
 		altS = new AlterarS();//para alteração de clientes, funcionarios,produtos e servicos
 		fik = new Fik();
 		sobre = new Sobre2();
-		
+		manual = new Manual();
 		relatPessoas = new Relatorio();
 		frelatF = new RelatorioF();
 		prelatP = new RelatorioP();
@@ -340,7 +341,10 @@ public class Principal extends JFrame {
 			}
 		});
 		
-		JMenu mnNewMenu_2 = new JMenu("Info");
+		
+		JMenu mnNewMenu_2 = new JMenu("Informa\u00E7\u00F5es");
+		
+		
 		mnNewMenu_2.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_2);
 		
@@ -352,6 +356,15 @@ public class Principal extends JFrame {
 			}
 		});
 		mnNewMenu_2.add(mntmNewMenuItem_5);
+		
+		JMenuItem mntmNewMenuItem_8 = new JMenuItem("Manual FikLinda");
+		mntmNewMenuItem_8.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				manual.setVisible(true);
+			}
+		});
+		mnNewMenu_2.add(mntmNewMenuItem_8);
 		menuBar.add(mntmNewMenuItem_661);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(102, 102, 255));
