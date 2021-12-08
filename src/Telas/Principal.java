@@ -349,6 +349,7 @@ public class Principal extends JFrame {
 		menuBar.add(mnNewMenu_2);
 		
 		JMenuItem mntmNewMenuItem_5 = new JMenuItem("Sobre a FikLinda");
+		mntmNewMenuItem_5.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		mntmNewMenuItem_5.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
@@ -358,6 +359,7 @@ public class Principal extends JFrame {
 		mnNewMenu_2.add(mntmNewMenuItem_5);
 		
 		JMenuItem mntmNewMenuItem_8 = new JMenuItem("Manual FikLinda");
+		mntmNewMenuItem_8.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		mntmNewMenuItem_8.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
